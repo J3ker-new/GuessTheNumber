@@ -50,4 +50,14 @@ The user is prompted to ensure that their guesses are within the valid range (0â
    
    ```bash
    git clone https://github.com/your-username/number-guessing-game.git
- 
+2. Navigate to the project folder.
+   
+   ```bash
+   cd number-guessing-game
+3. Compile and run the game.
+   ```bash
+   javac Main.java
+   java Main
+
+
+
