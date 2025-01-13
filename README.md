@@ -19,9 +19,9 @@ Based on how far the guess is, hints are provided such as:
 - "You're far off!"
 - "You're SUPER close!!"
 
-### Termination on Win
+### Restart/End Prompt on Win.
 
-The game automatically ends when the correct number is guessed.
+Game prompts the user to Start a new round or exit.
 
 ### Recursion
 
