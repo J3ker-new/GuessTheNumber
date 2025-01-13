@@ -21,7 +21,24 @@ class game{
         int checkProximity = diff - lastDiff;
         if(diff == 0){
             System.out.println("You are correct, Congratulations :)");
-            System.exit(0); // terminates the program on winning.
+            System.out.println("Press Y to restart and N to end.");
+
+            sc.nextLine(); // Consume the leftover newline character.
+            // Starting the new round
+            String newRound = sc.nextLine().toLowerCase();
+            if(newRound.equals("y")){
+                System.out.println("Restarting the game...");
+                restartGame();
+                return; //exits the method.
+            }
+            else if(newRound.equals("n")){
+                System.out.println("Exiting the game");
+                System.exit(0);// terminates the program on winning.
+            }
+            else{
+                System.out.println("Incorrect input.");
+                System.exit(0);
+            }
         } else if (diff >= 90) {
             System.out.print("You are not even close, Try again: ");
         }else if (diff >= 80) {
@@ -53,15 +70,23 @@ class game{
         b = sc.nextInt();
         checkInput();
     }
+    private void restartGame(){
+        a = newInt.nextInt(101);
+        b = 0; //resets user guess to 0
+        System.out.println("Enter your guess:");
+        int y = sc.nextInt();
+        setInput(y);
+        checkInput();
+    }
 }
 public class Main{
     public static void main(String[] args) {
         //Initiating the game via user input.
-        game test = new game();
+        game newGame = new game();
         Scanner sct = new Scanner(System.in);
-        System.out.println("Enter your Guess: ");
+        System.out.print("Enter your Guess: ");
         int y = sct.nextInt();
-        test.setInput(y);
-        test.checkInput();
+        newGame.setInput(y);
+        newGame.checkInput();
     }
 }
