@@ -30,7 +30,7 @@ The game uses recursion to allow multiple guesses until the correct number is fo
 ### Input Validation
 
 The user is prompted to ensure that their guesses are within the valid range (0–100).
-
+Implements Try and Catch to ensure integer inputs.
 ## Requirements
 
 - Java 8 or later (for the console version).
