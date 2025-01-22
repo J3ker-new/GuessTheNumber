@@ -40,8 +40,7 @@ Implements Try and Catch to ensure integer inputs.
 1. The game will generate a random number between 0 and 100.
 2. You will be asked to enter a guess.
 3. The game will give you feedback on your guess, telling you whether it's too high, too low, or close.
-4. Keep guessing until you find the correct number. The game will automatically end once you guess correctly.
-
+4. Keep guessing until you find the correct number. The game will prompt you to restart or  end.
 ## How to Run
 
 ### For Console Version:
